@@ -1,0 +1,6 @@
+.header {
+  display: inline-block;
+  width: 100%; }
+  .header .title {
+    margin-top: 24px;
+    font-family: sans-serif; }

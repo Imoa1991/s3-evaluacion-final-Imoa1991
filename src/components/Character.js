@@ -11,12 +11,15 @@ class Character extends React.Component {
     if (alive === true){
       return <p className="card__alive">Estado: Vivo</p>
     } else {
-      return <p className="card__alive--dead">Estado: Muerto <span>💀</span></p>
+      return <p className="card__alive dead">Estado: Muerto <span role="img" aria-label="dead">💀</span></p>
     }
   }
   render() {
     return (
       <React.Fragment>
+        <Link className="link" to='/' >
+          <button className="home">Home</button>
+        </Link>
         <ul className="card_container">
           <li className="card_list" key={this.character.id}>
             <h2 className="card__name">{this.character.name}</h2>
@@ -27,9 +30,6 @@ class Character extends React.Component {
             <p className="card__patronus">{this.character.patronus}</p>
           </li>
         </ul>
-        <Link className="link" to='/' >
-          <button className="Home">Home</button>
-        </Link>
       </React.Fragment>
       );
   }

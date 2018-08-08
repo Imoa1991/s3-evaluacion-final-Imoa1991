@@ -5,8 +5,7 @@ class Searcher extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <label htmlFor="personajes"></label>
-        <input id="personaje" className="personajes" placeholder="Harry Potter" type="text" onChange={this.props.saveInput} />
+        <input id="personajes" className="personajes" placeholder="Harry Potter" type="text" onChange={this.props.saveInput} />
       </React.Fragment>
       );
   }

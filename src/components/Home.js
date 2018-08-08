@@ -8,8 +8,10 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <h1 className="title">Harry Potter Characters</h1>
-        <Searcher saveInput={this.props.saveInput} character={this.props.character}/>
+        <div className="header">
+          <h1 className="title">Harry Potter Characters</h1>
+          <Searcher saveInput={this.props.saveInput} character={this.props.character}/>
+        </div>
         <People charactersFromAPI={this.props.charactersFromAPI} character={this.props.character} />
       </React.Fragment>
       );

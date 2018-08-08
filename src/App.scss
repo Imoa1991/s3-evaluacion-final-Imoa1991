@@ -7,44 +7,7 @@ html, body {
   height: 100%;
   text-align: center;
 }
-.personajes {
-  margin: 30px auto;
-  width: 300px;
-  border: 1px solid black;
-}
 .app {
   display: inline-block;
   width: 100%;
-}
-.peopleContainer {
-  display:grid;
-  grid-template-columns: 250px 250px 250px 250px;
-  grid-gap: 30px;
-  width: 1090px;
-  margin: 0 auto;
-}
-@media all and (min-width:500px) {
-    
-}
-.link {
-  text-decoration: none;
-}
-.list {
-  list-style: none;
-  border: 1px solid black;
-  background-color: rgb(255,160,122);
-}
-.name {
-  color: white;
-  padding-bottom: 30px;
-}
-.poster {
-  width: 249px;
-  height: 350px;
-  margin: 0 auto;
-  padding-bottom: 15px;
-}
-.house {
-  color: white;
-  padding-bottom: 10px;
 }
