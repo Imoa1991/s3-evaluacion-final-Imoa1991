@@ -1,6 +1,7 @@
 import React from 'react';
 import Searcher from './Searcher';
 import People from './People';
+import '../styles/Home.css';
 
 class Home extends React.Component {
 

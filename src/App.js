@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Home from './components/Home';
-import People from './components/People';
 import Character from './components/Character';
 import { Route, Switch } from 'react-router-dom';
 
@@ -32,19 +31,19 @@ search(){
       return response.json();
     })
     .then(apiResponse => {
-      let charactersFromAPI = [];
+      let newDataApi = [];
       for (var i = 0; i < apiResponse.length; i++) {
-        charactersFromAPI[i] = {...apiResponse[i],id:i};
+        newDataApi[i] = {...apiResponse[i],id:i};
       }
       this.setState({
-        charactersFromAPI: apiResponse
+        charactersFromAPI: newDataApi
         })
       })
   }
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Switch>
             <Route exact path='/' render={() =>
                <Home search={this.search} saveInput={this.saveInput} character={this.state.character} charactersFromAPI={this.state.charactersFromAPI}/>
