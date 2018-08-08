@@ -14,7 +14,7 @@ class Home extends React.Component {
         </div>
         <People charactersFromAPI={this.props.charactersFromAPI} character={this.props.character} />
       </React.Fragment>
-      );
+    );
   }
 }
 

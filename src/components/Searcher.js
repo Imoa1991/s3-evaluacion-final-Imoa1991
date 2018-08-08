@@ -7,7 +7,7 @@ class Searcher extends React.Component {
       <React.Fragment>
         <input id="personajes" className="personajes" placeholder="Harry Potter" type="text" onChange={this.props.saveInput} />
       </React.Fragment>
-      );
+    );
   }
 }
 

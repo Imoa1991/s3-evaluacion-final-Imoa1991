@@ -21,11 +21,11 @@ class App extends Component {
       character: value
     });
   }
-componentDidMount(){
-  this.search();
-}
+  componentDidMount(){
+    this.search();
+  }
 
-search(){
+  search(){
     fetch('http://hp-api.herokuapp.com/api/characters')
     .then(response => {
       return response.json();
@@ -37,21 +37,21 @@ search(){
       }
       this.setState({
         charactersFromAPI: newDataApi
-        })
       })
+    })
   }
 
   render() {
     return (
       <div className="app">
         <Switch>
-            <Route exact path='/' render={() =>
-               <Home search={this.search} saveInput={this.saveInput} character={this.state.character} charactersFromAPI={this.state.charactersFromAPI}/>
-             } />
-            <Route path='/character/:id' render={(props) =>
-               <Character match={props.match} charactersFromAPI={this.state.charactersFromAPI} character={this.state.character}/>
-             } />
-          </Switch>
+          <Route exact path='/' render={() =>
+            <Home search={this.search} saveInput={this.saveInput} character={this.state.character} charactersFromAPI={this.state.charactersFromAPI}/>
+          } />
+          <Route path='/character/:id' render={(props) =>
+            <Character match={props.match} charactersFromAPI={this.state.charactersFromAPI} character={this.state.character}/>
+          } />
+        </Switch>
       </div>
     );
   }

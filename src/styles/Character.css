@@ -1,0 +1,38 @@
+.buttomHome {
+  margin: 20px;
+  padding: 10px;
+  background-color: lightsalmon;
+  border: 1px solid black;
+  border-radius: 30%;
+  color: white; }
+
+.card_list {
+  display: grid;
+  grid-template-columns: 150px 250px;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  width: 400px;
+  list-style: none;
+  margin: 0 auto;
+  background-color: lightsalmon; }
+
+.card__poster {
+  grid-column: 1;
+  width: 150px;
+  height: 250px; }
+
+.card__name {
+  grid-column: 2; }
+
+.card__house {
+  grid-column: 2; }
+
+.card__birthday {
+  grid-column: 2; }
+
+.card__alive {
+  grid-column: 2; }
+  .card__alive.dead {
+    grid-column: 2; }
+
+.card__patronus {
+  grid-column: 2; }

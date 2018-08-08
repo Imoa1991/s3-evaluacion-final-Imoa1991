@@ -13,23 +13,23 @@ class People extends React.Component {
   render() {
     return (
       <ul className="peopleContainer">
-         {
+        {
           this.props.charactersFromAPI.filter(item => {
             return item.name.toLowerCase().includes(this.props.character);
           })
           .map(characterData =>
             <Link className="link" to={`/character/${characterData.id}`} key={characterData.id}>
-              <li className="list" key={characterData.id}>
-                <img src={characterData.image} alt="poster"  className="poster"/>
-                <h2 className="name">{characterData.name}</h2>
-                {this.getHouse(characterData.house)}
-              </li>
-            </Link>
-          )
-        }
-      </ul>
-      );
-  }
+            <li className="list" key={characterData.id}>
+              <img src={characterData.image} alt="poster"  className="poster"/>
+              <h2 className="name">{characterData.name}</h2>
+              {this.getHouse(characterData.house)}
+            </li>
+          </Link>
+        )
+      }
+    </ul>
+  );
+}
 }
 
 export default People;
