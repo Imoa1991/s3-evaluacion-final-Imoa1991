@@ -18,6 +18,7 @@
      "test": "react-scripts test --env=jsdom",
      "eject": "react-scripts eject"
    },
+   "homepage": "./",
   "devDependencies": {
     "node-sass-chokidar": "^1.3.3",
     "npm-run-all": "^4.1.3"
