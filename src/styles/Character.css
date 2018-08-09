@@ -7,32 +7,38 @@
   color: white; }
 
 .card_list {
-  display: grid;
-  grid-template-columns: 150px 250px;
-  grid-template-rows: 50px 50px 50px 50px 50px;
-  width: 400px;
+  display: flex;
+  flex-direction: row;
+  width: 450px;
   list-style: none;
   margin: 0 auto;
-  background-color: lightsalmon; }
+  background-color: lightsalmon;
+  color: white; }
 
 .card__poster {
-  grid-column: 1;
   width: 150px;
   height: 250px; }
 
-.card__name {
-  grid-column: 2; }
-
-.card__house {
-  grid-column: 2; }
-
-.card__birthday {
-  grid-column: 2; }
-
-.card__alive {
-  grid-column: 2; }
-  .card__alive.dead {
-    grid-column: 2; }
-
-.card__patronus {
-  grid-column: 2; }
+.card_details {
+  width: 300px; }
+  .card_details .card__name {
+    padding: 20px 0px 20px;
+    text-align: center; }
+  .card_details .card__house {
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px; }
+  .card_details .card__birthday {
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px; }
+  .card_details .card__alive {
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px; }
+    .card_details .card__alive.dead {
+      color: grey; }
+  .card_details .card__patronus {
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px; }

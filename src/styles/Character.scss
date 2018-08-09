@@ -6,38 +6,47 @@
   border-radius: 30%;
   color: white;
 }
-.card_container {
-
-}
 .card_list {
-  display:grid;
-  grid-template-columns: 150px 250px;
-  grid-template-rows: 50px 50px 50px 50px 50px;
-  width: 400px;
+  display: flex;
+  flex-direction: row;
+  width: 450px;
   list-style: none;
   margin: 0 auto;
   background-color: rgb(255,160,122);
+  color: white;
 }
-.card__poster{
-  grid-column: 1;
+.card__poster {
   width: 150px;
   height: 250px;
 }
-.card__name{
-  grid-column: 2;
-}
-.card__house{
-  grid-column: 2;
-}
-.card__birthday {
-  grid-column: 2;
-}
-.card__alive {
-  grid-column: 2;
-  &.dead {
-    grid-column: 2;
+.card_details {
+  width: 300px;
+
+  .card__name {
+    padding: 20px 0px 20px;
+    text-align: center;
   }
-}
-.card__patronus {
-  grid-column: 2;
+  .card__house{
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+  .card__birthday {
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+  .card__alive {
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+    &.dead {
+      color: grey;
+    }
+  }
+  .card__patronus {
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+  }
 }
