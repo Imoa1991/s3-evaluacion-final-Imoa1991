@@ -16,11 +16,11 @@
   color: white;
   border: 1px solid black;
   .card__image-container {
-      height: 290px;
-      width: 214px;
-      background-position: center top;
-      background-repeat: no-repeat;
-      background-size: cover;
+    height: 290px;
+    width: 214px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
     .card__poster {
       width: 0px;
       height: 0px;
@@ -48,7 +48,7 @@
     padding-left: 15px;
     padding-top: 10px;
     &.dead {
-      color: grey;
+      color: black;
     }
   }
   .card__patronus {
