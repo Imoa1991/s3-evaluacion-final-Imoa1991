@@ -8,17 +8,24 @@
     border: 1px solid black;
     background-color: rgb(255,160,122);
     margin-bottom: 20px;
-  }
+    width: 214px;
+    .image__container {
+      height: 290px;
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+       .poster {
+          width: 0px;
+          height: 0px;
+          margin: 0 auto;
+          padding-bottom: 15px;
+        }
+      }
+    }
   .name {
     color: white;
-    padding-bottom: 30px;
+    padding: 20px 0 30px;
     font-size: 18px;
-  }
-  .poster {
-    width: 250px;
-    height: 350px;
-    margin: 0 auto;
-    padding-bottom: 15px;
   }
   .house {
     color: white;
@@ -32,11 +39,7 @@
     grid-gap: 20px;
     width: 640px;
     margin: 0 auto;
-    .poster {
-      width: 200px;
-      height: 280px;
-    }
-    .list {
+  .list {
       margin-bottom: 0px;
     }
   }

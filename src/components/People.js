@@ -20,7 +20,9 @@ class People extends React.Component {
           .map(characterData =>
             <Link className="link" to={`/character/${characterData.id}`} key={characterData.id}>
             <li className="list" key={characterData.id}>
-              <img src={characterData.image} alt="poster"  className="poster"/>
+              <div className="image__container" style={{backgroundImage:` url(${characterData.image})`}} title="Character image">
+                <img src={characterData.image} alt="poster"  className="poster"/>
+              </div>
               <h2 className="name">{characterData.name}</h2>
               {this.getHouse(characterData.house)}
             </li>

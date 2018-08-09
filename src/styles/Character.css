@@ -6,18 +6,24 @@
   border-radius: 30%;
   color: white; }
 
-.card_list {
+.card__container {
   display: flex;
   flex-direction: row;
-  width: 450px;
+  width: 500px;
   list-style: none;
   margin: 0 auto;
   background-color: lightsalmon;
-  color: white; }
-
-.card__poster {
-  width: 150px;
-  height: 250px; }
+  color: white;
+  border: 1px solid black; }
+  .card__container .card__image-container {
+    height: 290px;
+    width: 214px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .card__container .card__image-container .card__poster {
+      width: 0px;
+      height: 0px; }
 
 .card_details {
   width: 300px; }

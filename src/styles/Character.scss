@@ -6,22 +6,29 @@
   border-radius: 30%;
   color: white;
 }
-.card_list {
+.card__container{
   display: flex;
   flex-direction: row;
-  width: 450px;
+  width: 500px;
   list-style: none;
   margin: 0 auto;
   background-color: rgb(255,160,122);
   color: white;
-}
-.card__poster {
-  width: 150px;
-  height: 250px;
+  border: 1px solid black;
+  .card__image-container {
+      height: 290px;
+      width: 214px;
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    .card__poster {
+      width: 0px;
+      height: 0px;
+    }
+  }
 }
 .card_details {
   width: 300px;
-
   .card__name {
     padding: 20px 0px 20px;
     text-align: center;
