@@ -9,10 +9,12 @@ class App extends Component {
     super(props);
     this.state={
       character:'',
-      charactersFromAPI: []
+      charactersFromAPI: [],
+      house:''
     }
     this.search=this.search.bind(this);
     this.saveInput=this.saveInput.bind(this);
+    this.filterHouse=this.filterHouse.bind(this);
   }
 
   saveInput(e) {
@@ -24,7 +26,12 @@ class App extends Component {
   componentDidMount(){
     this.search();
   }
-
+  filterHouse(e) {
+      const resultado = e.currentTarget.value;
+      this.setState({
+        house: resultado
+      });
+    }
   search(){
     fetch('https://hp-api.herokuapp.com/api/characters')
     .then(response => {
@@ -46,7 +53,7 @@ class App extends Component {
       <div className="app">
         <Switch>
           <Route exact path='/' render={() =>
-            <Home search={this.search} saveInput={this.saveInput} character={this.state.character} charactersFromAPI={this.state.charactersFromAPI}/>
+            <Home search={this.search} saveInput={this.saveInput} character={this.state.character} charactersFromAPI={this.state.charactersFromAPI} house={this.state.house} filterHouse={this.filterHouse}/>
           } />
           <Route path='/character/:id' render={(props) =>
             <Character match={props.match} charactersFromAPI={this.state.charactersFromAPI} character={this.state.character}/>

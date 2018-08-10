@@ -17,6 +17,9 @@ class People extends React.Component {
           this.props.charactersFromAPI.filter(item => {
             return item.name.toLowerCase().includes(this.props.character);
           })
+          .filter(item => {
+            return item.house.toLowerCase().includes(this.props.house.toLowerCase());
+          })
           .map(characterData =>
             <Link className="link" to={`/character/${characterData.id}`} key={characterData.id}>
             <li className="list" key={characterData.id}>
