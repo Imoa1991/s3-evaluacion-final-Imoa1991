@@ -23,9 +23,11 @@ class App extends Component {
       character: value
     });
   }
+  
   componentDidMount(){
     this.search();
   }
+
   filterHouse(e) {
       const resultado = e.currentTarget.value;
       this.setState({
